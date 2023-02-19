@@ -1,1 +1,2 @@
-# Solution-Challenge-7team-Mobile
+# 2023 GDSC Solution Challenge
+## 7Team-Mobile
