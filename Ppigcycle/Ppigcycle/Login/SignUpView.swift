@@ -9,12 +9,12 @@ import SwiftUI
 
 struct SignUpView: View {
     @Environment(\.presentationMode) var presention
-    @State private var user_id: String = ""
-    @State private var user_nickname: String = ""
-    @State private var user_pw: String = ""
-    @State private var user_pw2: String = ""
+    @State private var id: String = ""
+    @State private var nickname: String = ""
+    @State private var password: String = ""
+    @State private var checkpassword: String = ""
     @State private var date: String = ""
-//    @StateObject var api = RestAPI()
+    @StateObject var api = RestAPI()
     
     var body: some View {
         ZStack {
@@ -22,7 +22,7 @@ struct SignUpView: View {
             VStack {
                 HStack {
                     Spacer()
-                    TextField("아이디", text: $user_id)
+                    TextField("아이디", text: $id)
                         .padding()
                         .autocapitalization(.none) // 자동으로 대문자 설정 안하기
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
@@ -33,7 +33,7 @@ struct SignUpView: View {
                 .padding(10)
                 HStack {
                     Spacer()
-                    TextField("닉네임", text: $user_nickname)
+                    TextField("닉네임", text: $nickname)
                         .padding()
                         .autocapitalization(.none) // 자동으로 대문자 설정 안하기
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
@@ -44,7 +44,7 @@ struct SignUpView: View {
                 .padding(10)
                 HStack {
                     Spacer()
-                    SecureField("비밀번호", text: $user_pw)
+                    SecureField("비밀번호", text: $password)
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                         .foregroundColor(.black)
@@ -54,7 +54,7 @@ struct SignUpView: View {
                 .padding(10)
                 HStack {
                     Spacer()
-                    SecureField("비밀번호 확인", text: $user_pw2)
+                    SecureField("비밀번호 확인", text: $checkpassword)
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                         .foregroundColor(.black)
@@ -85,7 +85,19 @@ struct SignUpView: View {
                     .foregroundColor(Color.white)
                     
                     Button(action: {
-                        // api 연결
+                        if id != "" && nickname != "" && password != "" && checkpassword != "" {
+                            let parameters: [String: Any] = ["id": id, "nickname": nickname, "password": password, "checkpassword": checkpassword]
+                            api.Signup(parameters: parameters)
+                            
+                            // api 보냈으니까 text 비워주기
+                            id = ""
+                            nickname = ""
+                            password = ""
+                            checkpassword = ""
+                            presention.wrappedValue.dismiss()
+                        } else {
+                            presention.wrappedValue.dismiss()
+                        }
                     }) {
                         Text("가입하기")
                             .bold()
@@ -100,8 +112,8 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
-}
+//struct SignUpView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignUpView()
+//    }
+//}

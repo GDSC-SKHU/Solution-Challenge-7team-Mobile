@@ -12,6 +12,7 @@ struct PpigcycleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            //LoginView()
         }
     }
 }
