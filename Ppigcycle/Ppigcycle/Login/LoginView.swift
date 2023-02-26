@@ -14,13 +14,13 @@ extension Color {
 }
 
 struct LoginView: View {
-    @State private var user_id: String = ""
-    @State private var user_pw: String = ""
+    @State private var id: String = ""
+    @State private var password: String = ""
     @State private var signup = false
     @State var tag:Int? = nil
     @State private var error = false
-//    @StateObject var api = RestAPI.shared
-//    @Binding var loginSuccess: Bool
+    @StateObject var api = RestAPI.shared
+    @Binding var loginSuccess: Bool // 화면 전환 시 사용
     
     var body: some View {
         NavigationView {
@@ -33,7 +33,7 @@ struct LoginView: View {
                         .frame(width: 120, height: 100)
                     HStack {
                         Spacer()
-                        TextField("아이디", text: $user_id)
+                        TextField("아이디", text: $id)
                             .padding()
                             .autocapitalization(.none) // 자동으로 대문자 설정 안하기
                             .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
@@ -42,7 +42,7 @@ struct LoginView: View {
                     .padding(10)
                     HStack {
                         Spacer()
-                        SecureField("비밀번호", text: $user_pw)
+                        SecureField("비밀번호", text: $password)
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                         Spacer()
@@ -77,9 +77,9 @@ struct LoginView: View {
                     }
                     .padding()
                     Spacer()
-                    // 로그인 실패 시 오류 출력
+                    // 로그인 실패 시 오류
                     if error {
-                        Text("이메일 또는 비밀번호 오류")
+                        Text("아이디 또는 비밀번호 오류")
                             .foregroundColor(Color.red)
                     }
                 }
@@ -88,8 +88,8 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
-}
+//struct LoginView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginView()
+//    }
+//}
