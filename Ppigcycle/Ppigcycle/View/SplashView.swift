@@ -10,14 +10,21 @@ import SwiftUI
 struct SplashView: View {
     
     @State var isActive: Bool = false
-
+    @State var loginSuccess = false
     
     var body: some View {
                 
         ZStack {
             Color(r:254, g: 251, b: 233).ignoresSafeArea()
             if self.isActive {
-                MainView()
+                if loginSuccess { // true면 화면 넘어감
+                    MainView()
+                        .navigationBarBackButtonHidden(true)
+                        .navigationBarHidden(true)
+                }
+                else {
+                    LoginView(loginSuccess: $loginSuccess)
+                }
             } else {
                 Image("logo").resizable().scaledToFit().frame(width: 120, height: 100)
             }

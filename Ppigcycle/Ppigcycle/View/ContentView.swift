@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State var loginSuccess = false
-    
-    var body: some View {
-        
-        return Group {
-            if loginSuccess { // true면 화면 넘어감 
-                MainView()
-                    .navigationBarBackButtonHidden(true)
-                    .navigationBarHidden(true)
-            }
-            else {
-                LoginView(loginSuccess: $loginSuccess)
-            }
-        }
-    }
-}
+//struct ContentView: View {
+//    @State var loginSuccess = false
+//
+//    var body: some View {
+//
+//        return Group {
+//            if loginSuccess { // true면 화면 넘어감
+//                MainView()
+//                    .navigationBarBackButtonHidden(true)
+//                    .navigationBarHidden(true)
+//            }
+//            else {
+//                LoginView(loginSuccess: $loginSuccess)
+//            }
+//        }
+//    }
+//}
         
 //    var body: some View {
 //        VStack {

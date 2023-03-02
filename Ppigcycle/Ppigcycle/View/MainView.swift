@@ -60,7 +60,10 @@ struct MainView: View {
                     
                 }.padding()
                 Spacer()
-                Button(action: {print("barcode")}){
+                Button(action: {
+                    // 카메라 연결 
+                    print("barcode")
+                }){
                     Image("barcode").renderingMode(.original)
                         .resizable()
                         .frame(width: 100, height: 100)
