@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct PpigcycleApp: App {
+    
     var body: some Scene {
         WindowGroup {
             SplashView()
@@ -16,4 +17,16 @@ struct PpigcycleApp: App {
             //LoginView()
         }
     }
+    
+//    @StateObject private var vm = AppViewModel()
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//                .environmentObject(vm)
+//                .task {
+//                    await vm.requestDataScannerAccessStatus()
+//                }
+//        }
+//    }
 }
