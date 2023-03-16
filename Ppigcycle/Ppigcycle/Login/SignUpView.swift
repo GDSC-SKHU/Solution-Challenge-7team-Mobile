@@ -29,6 +29,17 @@ struct SignUpView: View {
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
                     Spacer()
+                    Button(action: {
+                        // api 연결
+                    }) {
+                        Text("중복 확인")
+                            .bold()
+                    }
+                    .frame(width: 80, height: 40)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color.green))
+                    .font(.system(size: 15))
+                    .foregroundColor(Color.white)
+                    
                 }
                 .padding(10)
                 HStack {
@@ -40,6 +51,16 @@ struct SignUpView: View {
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
                     Spacer()
+                    Button(action: {
+                        // api 연결
+                    }) {
+                        Text("중복 확인")
+                            .bold()
+                    }
+                    .frame(width: 80, height: 40)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color.green))
+                    .font(.system(size: 15))
+                    .foregroundColor(Color.white)
                 }
                 .padding(10)
                 HStack {
