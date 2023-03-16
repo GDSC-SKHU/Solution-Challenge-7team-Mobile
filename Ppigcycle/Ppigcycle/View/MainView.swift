@@ -15,7 +15,7 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
+            ZStack{
                 Color(r:254, g: 251, b: 233).ignoresSafeArea()
                 VStack{
                     HStack{
@@ -25,39 +25,51 @@ struct MainView: View {
                             .font(.system(size: 35,weight: .bold))
                             .foregroundColor(Color.green)
                     }.padding(25)
-                    HStack(spacing: 40){
-                        Button(action: {print("paper")}){
+                    HStack(spacing: 15){
+                        NavigationLink(destination: PaperView()
+                        ,tag: 2, selection: self.$tag) {}
+                        Button(action: {self.tag = 2}){
                             Image("paper").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        Button(action: {print("plastic")}){
+                        NavigationLink(destination: PlasticView()
+                        ,tag: 3, selection: self.$tag) {}
+                        Button(action: {self.tag = 3}){
                             Image("plastic").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
                         
                     }.padding()
-                    HStack(spacing: 40){
-                        Button(action: {print("glass")}){
+                    HStack(spacing: 15){
+                        NavigationLink(destination: GlassView()
+                        ,tag: 4, selection: self.$tag) {}
+                        Button(action: {self.tag = 4}){
                             Image("glass").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        Button(action: {print("styroform")}){
-                            Image("styrofoam").renderingMode(.original)
+                        NavigationLink(destination: PlasticView()
+                        ,tag: 5, selection: self.$tag) {}
+                        Button(action: {self.tag = 5}){
+                        Image("styrofoam").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
                         
                     }.padding()
-                    HStack(spacing: 40){
-                        Button(action: {print("can")}){
+                    HStack(spacing: 15){
+                        NavigationLink(destination: PlasticView()
+                        ,tag: 6, selection: self.$tag) {}
+                        Button(action: {self.tag = 6}){
                             Image("can").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        Button(action: {print("vinyl")}){
+                        NavigationLink(destination: PlasticView()
+                        ,tag: 7, selection: self.$tag) {}
+                        Button(action: {self.tag = 7}){
                             Image("vinyl").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
