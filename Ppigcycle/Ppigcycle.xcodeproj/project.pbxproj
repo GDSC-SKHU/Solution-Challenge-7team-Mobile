@@ -150,7 +150,6 @@
 			children = (
 				610475BB29BFF4C800E3A2BF /* AccountAuthenticationModificationViewController.swift */,
 				610475BD29BFF4C800E3A2BF /* MainInterface.storyboard */,
-				610475C029BFF4C800E3A2BF /* Info.plist */,
 			);
 			path = ppigcycle;
 			sourceTree = "<group>";
@@ -198,6 +197,7 @@
 		F7BF7B0729A9E7F9007F8197 /* Ppigcycle */ = {
 			isa = PBXGroup;
 			children = (
+				610475C029BFF4C800E3A2BF /* Info.plist */,
 				F761A93E29B9C7A600A0C652 /* AppViewModel.swift */,
 				F7A4E11929AB501E00EAD4CC /* Login */,
 				F7A4E11629AB49E900EAD4CC /* API */,
