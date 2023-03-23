@@ -61,7 +61,7 @@ class RestAPI: ObservableObject {
     func LoginSuccess(parameters: [String: Any],completion: @escaping (Bool) -> Void) {
         
         guard let url = URL(string:
-                                "api 주소") else {
+                                "http://ppigcycle.duckdns.org/login") else {
             return
         }
         

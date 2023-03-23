@@ -106,15 +106,16 @@ struct SignUpView: View {
                     .foregroundColor(Color.white)
                     
                     Button(action: {
-                        if id != "" && nickname != "" && password != "" && checkpassword != "" {
-                            let parameters: [String: Any] = ["id": id, "nickname": nickname, "password": password, "checkpassword": checkpassword]
+                        if id != "" && password != "" && checkpassword != "" && nickname != "" && date != "" {
+                            let parameters: [String: Any] = ["id": id, "password": password, "checkpassword": checkpassword, "nickname": nickname, "date": date]
                             api.Signup(parameters: parameters)
                             
                             // api 보냈으니까 text 비워주기
                             id = ""
-                            nickname = ""
                             password = ""
                             checkpassword = ""
+                            nickname = ""
+                            date = ""
                             presention.wrappedValue.dismiss()
                         } else {
                             presention.wrappedValue.dismiss()
