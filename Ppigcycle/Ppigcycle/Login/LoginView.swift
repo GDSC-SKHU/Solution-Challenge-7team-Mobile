@@ -51,8 +51,22 @@ struct LoginView: View {
                     HStack {
                         // 로그인 버튼
                         Button(action: {
-                            // api 연결 코드 작성
-                            self.loginSuccess = true
+                            // 이메일, 비밀번호 로그인 api 파라미터로 보내주기
+                            if id != "" && password != "" {
+                                let parameters: [String: Any] = ["id": id, "password": password]
+                                api.LoginSuccess(parameters: parameters) { value in
+                                    
+                                    if value {
+                                        self.loginSuccess = true
+                                    }
+                                    else {
+                                        self.error = true
+                                    }
+                                }
+                            }
+                            else {
+                                self.error = true
+                            }
                         }) {
                             Text("로그인")
                                 .frame(width: 100, height: 35)
