@@ -1,8 +1,8 @@
 //
 //  RestAPI.swift
-//  Ppigcycle
+//  ppigcycle
 //
-//  Created by Jinhee on 2023/02/26.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import Foundation
@@ -29,7 +29,7 @@ class RestAPI: ObservableObject {
     //MARK: 회원가입
     func Signup(parameters: [String: Any]) {
         guard let url = URL(string:
-                                "http://localhost:8080/users/new-user") else {
+                                "http://ppigcycle.duckdns.org/users/new-user") else {
             return
         }
         
@@ -61,7 +61,7 @@ class RestAPI: ObservableObject {
     func LoginSuccess(parameters: [String: Any],completion: @escaping (Bool) -> Void) {
         
         guard let url = URL(string:
-                                "http://ppigcycle.duckdns.org/login") else {
+                "http://ppigcycle.duckdns.org/login") else {
             return
         }
         
@@ -83,9 +83,6 @@ class RestAPI: ObservableObject {
             do {
                 let posts = try JSONDecoder().decode(Login.self, from: data)
                 DispatchQueue.main.async {
-//                    self!.loginsuccess = true
-//                    print("확인 : ", self!.loginsuccess)
-//                    print("확인 : ", posts)
                     completion(true)
                 }
             }

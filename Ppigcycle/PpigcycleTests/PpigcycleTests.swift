@@ -1,14 +1,14 @@
 //
-//  PpigcycleTests.swift
-//  PpigcycleTests
+//  ppigcycleTests.swift
+//  ppigcycleTests
 //
-//  Created by Jinhee on 2023/02/25.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import XCTest
-@testable import Ppigcycle
+@testable import ppigcycle
 
-final class PpigcycleTests: XCTestCase {
+final class ppigcycleTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

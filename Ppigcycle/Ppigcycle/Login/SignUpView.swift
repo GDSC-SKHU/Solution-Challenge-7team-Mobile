@@ -1,8 +1,8 @@
 //
 //  SignUpView.swift
-//  Ppigcycle
+//  ppigcycle
 //
-//  Created by Jinhee on 2023/02/25.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import SwiftUI
@@ -28,6 +28,7 @@ struct SignUpView: View {
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
+                        .disableAutocorrection(true) // 자동완성 끄기
                     Spacer()
                     Button(action: {
                         // api 연결
@@ -50,6 +51,7 @@ struct SignUpView: View {
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
+                        .disableAutocorrection(true) // 자동완성 끄기
                     Spacer()
                     Button(action: {
                         // api 연결
@@ -90,6 +92,7 @@ struct SignUpView: View {
                         .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
+                        .disableAutocorrection(true) // 자동완성 끄기 
                     Spacer()
                 }
                 .padding(10)

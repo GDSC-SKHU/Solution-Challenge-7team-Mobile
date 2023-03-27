@@ -1,13 +1,13 @@
 //
-//  PpigcycleUITestsLaunchTests.swift
-//  PpigcycleUITests
+//  ppigcycleUITestsLaunchTests.swift
+//  ppigcycleUITests
 //
-//  Created by Jinhee on 2023/02/25.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import XCTest
 
-final class PpigcycleUITestsLaunchTests: XCTestCase {
+final class ppigcycleUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

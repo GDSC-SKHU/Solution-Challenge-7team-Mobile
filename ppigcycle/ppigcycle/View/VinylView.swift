@@ -1,8 +1,8 @@
 //
-//  Vinyl.swift
-//  Ppigcycle
+//  VinylView.swift
+//  ppigcycle
 //
-//  Created by 왕서희 on 2023/03/16.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import SwiftUI

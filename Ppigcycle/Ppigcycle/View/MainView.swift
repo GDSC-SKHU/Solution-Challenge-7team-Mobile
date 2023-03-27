@@ -1,9 +1,8 @@
-
 //
-//  ContentView.swift
-//  Google-Solution
+//  MainView.swift
+//  ppigcycle
 //
-//  Created by 왕서희 on 2023/02/19.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import SwiftUI
@@ -40,7 +39,7 @@ struct MainView: View {
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        
+
                     }.padding()
                     HStack(spacing: 15){
                         NavigationLink(destination: GlassView()
@@ -57,7 +56,7 @@ struct MainView: View {
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        
+
                     }.padding()
                     HStack(spacing: 15){
                         NavigationLink(destination: PlasticView()
@@ -74,7 +73,7 @@ struct MainView: View {
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        
+
                     }.padding()
                     Spacer()
                     NavigationLink(destination: ContentView()

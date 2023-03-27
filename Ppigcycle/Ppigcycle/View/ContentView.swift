@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Ppigcycle
+//  ppigcycle
 //
-//  Created by Jinhee on 2023/02/25.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import SwiftUI

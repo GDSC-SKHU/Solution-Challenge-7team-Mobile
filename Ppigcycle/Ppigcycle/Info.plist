@@ -7,19 +7,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSExtension</key>
-	<dict>
-		<key>NSExtensionAttributes</key>
-		<dict>
-			<key>ASAccountAuthenticationModificationSupportsStrongPasswordChange</key>
-			<true/>
-			<key>ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple</key>
-			<true/>
-		</dict>
-		<key>NSExtensionMainStoryboard</key>
-		<string>MainInterface</string>
-		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.authentication-services-account-authentication-modification-ui</string>
-	</dict>
 </dict>
 </plist>

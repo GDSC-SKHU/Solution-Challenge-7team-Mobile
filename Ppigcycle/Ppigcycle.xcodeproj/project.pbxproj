@@ -7,127 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		610475B929BFF4C800E3A2BF /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610475B829BFF4C800E3A2BF /* AuthenticationServices.framework */; };
-		610475BC29BFF4C800E3A2BF /* AccountAuthenticationModificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475BB29BFF4C800E3A2BF /* AccountAuthenticationModificationViewController.swift */; };
-		610475BF29BFF4C800E3A2BF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610475BD29BFF4C800E3A2BF /* MainInterface.storyboard */; };
-		610475C329BFF4C800E3A2BF /* ppigcycle.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 610475B629BFF4C800E3A2BF /* ppigcycle.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		610475C929C04F7100E3A2BF /* CanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475C829C04F7100E3A2BF /* CanView.swift */; };
-		610475CF29C2F64C00E3A2BF /* PlasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475CE29C2F64C00E3A2BF /* PlasticView.swift */; };
-		610475D129C2F68C00E3A2BF /* StyroformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475D029C2F68C00E3A2BF /* StyroformView.swift */; };
-		610475D329C2F69300E3A2BF /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475D229C2F69300E3A2BF /* GlassView.swift */; };
-		610475D529C2F69F00E3A2BF /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475D429C2F69F00E3A2BF /* PaperView.swift */; };
-		610475D729C2F8A700E3A2BF /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475D629C2F8A700E3A2BF /* Vinyl.swift */; };
-		610475D929C31C5F00E3A2BF /* RecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610475D829C31C5F00E3A2BF /* RecycleView.swift */; };
-		6123F8BB29AC68FE005ADF35 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6123F8BA29AC68FE005ADF35 /* SplashView.swift */; };
-		F761A93D29B9C78500A0C652 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761A93C29B9C78500A0C652 /* DataScannerView.swift */; };
-		F761A93F29B9C7A600A0C652 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761A93E29B9C7A600A0C652 /* AppViewModel.swift */; };
-		F7A4E11829AB4A0F00EAD4CC /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A4E11729AB4A0F00EAD4CC /* RestAPI.swift */; };
-		F7A4E11B29AB8B2A00EAD4CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A4E11A29AB8B2A00EAD4CC /* MainView.swift */; };
-		F7BF7B0929A9E7F9007F8197 /* PpigcycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B0829A9E7F9007F8197 /* PpigcycleApp.swift */; };
-		F7BF7B0B29A9E7F9007F8197 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B0A29A9E7F9007F8197 /* ContentView.swift */; };
-		F7BF7B0D29A9E7FF007F8197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BF7B0C29A9E7FF007F8197 /* Assets.xcassets */; };
-		F7BF7B1029A9E7FF007F8197 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BF7B0F29A9E7FF007F8197 /* Preview Assets.xcassets */; };
-		F7BF7B1A29A9E800007F8197 /* PpigcycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B1929A9E800007F8197 /* PpigcycleTests.swift */; };
-		F7BF7B2429A9E800007F8197 /* PpigcycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B2329A9E800007F8197 /* PpigcycleUITests.swift */; };
-		F7BF7B2629A9E800007F8197 /* PpigcycleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B2529A9E800007F8197 /* PpigcycleUITestsLaunchTests.swift */; };
-		F7BF7B3329A9E83A007F8197 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B3229A9E83A007F8197 /* LoginView.swift */; };
-		F7BF7B3529A9E862007F8197 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF7B3429A9E862007F8197 /* SignUpView.swift */; };
+		F7CAD6C129D088F3003162CC /* ppigcycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */; };
+		F7CAD6C329D088F3003162CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6C229D088F3003162CC /* ContentView.swift */; };
+		F7CAD6C529D088F8003162CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CAD6C429D088F8003162CC /* Assets.xcassets */; };
+		F7CAD6C829D088F8003162CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CAD6C729D088F8003162CC /* Preview Assets.xcassets */; };
+		F7CAD6D229D088F8003162CC /* ppigcycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6D129D088F8003162CC /* ppigcycleTests.swift */; };
+		F7CAD6DC29D088F8003162CC /* ppigcycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6DB29D088F8003162CC /* ppigcycleUITests.swift */; };
+		F7CAD6DE29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6DD29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift */; };
+		F7CAD6EC29D08ADB003162CC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6EB29D08ADB003162CC /* SignUpView.swift */; };
+		F7CAD6EE29D08B08003162CC /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6ED29D08B08003162CC /* RestAPI.swift */; };
+		F7CAD6F029D08B35003162CC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6EF29D08B35003162CC /* LoginView.swift */; };
+		F7CAD6F229D08BBD003162CC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6F129D08BBD003162CC /* SplashView.swift */; };
+		F7CAD6F429D08BF4003162CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6F329D08BF4003162CC /* MainView.swift */; };
+		F7CAD6F929D092DF003162CC /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6F829D092DF003162CC /* AppViewModel.swift */; };
+		F7CAD6FB29D09314003162CC /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6FA29D09314003162CC /* DataScannerView.swift */; };
+		F7CAD6FD29D09331003162CC /* CanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6FC29D09331003162CC /* CanView.swift */; };
+		F7CAD6FF29D09353003162CC /* PlasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6FE29D09353003162CC /* PlasticView.swift */; };
+		F7CAD70129D0936A003162CC /* StyroformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70029D0936A003162CC /* StyroformView.swift */; };
+		F7CAD70329D09382003162CC /* VinylView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70229D09382003162CC /* VinylView.swift */; };
+		F7CAD70529D0939A003162CC /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70429D0939A003162CC /* GlassView.swift */; };
+		F7CAD70729D093AE003162CC /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70629D093AE003162CC /* PaperView.swift */; };
+		F7CAD70929D093BB003162CC /* RecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70829D093BB003162CC /* RecycleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		610475C129BFF4C800E3A2BF /* PBXContainerItemProxy */ = {
+		F7CAD6CE29D088F8003162CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F7BF7AFD29A9E7F9007F8197 /* Project object */;
+			containerPortal = F7CAD6B529D088F3003162CC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 610475B529BFF4C800E3A2BF;
+			remoteGlobalIDString = F7CAD6BC29D088F3003162CC;
 			remoteInfo = ppigcycle;
 		};
-		F7BF7B1629A9E800007F8197 /* PBXContainerItemProxy */ = {
+		F7CAD6D829D088F8003162CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F7BF7AFD29A9E7F9007F8197 /* Project object */;
+			containerPortal = F7CAD6B529D088F3003162CC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F7BF7B0429A9E7F9007F8197;
-			remoteInfo = Ppigcycle;
-		};
-		F7BF7B2029A9E800007F8197 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F7BF7AFD29A9E7F9007F8197 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7BF7B0429A9E7F9007F8197;
-			remoteInfo = Ppigcycle;
+			remoteGlobalIDString = F7CAD6BC29D088F3003162CC;
+			remoteInfo = ppigcycle;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		610475C729BFF4C800E3A2BF /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				610475C329BFF4C800E3A2BF /* ppigcycle.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		610475B629BFF4C800E3A2BF /* ppigcycle.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ppigcycle.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		610475B829BFF4C800E3A2BF /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		610475BB29BFF4C800E3A2BF /* AccountAuthenticationModificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAuthenticationModificationViewController.swift; sourceTree = "<group>"; };
-		610475BE29BFF4C800E3A2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		610475C029BFF4C800E3A2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		610475C829C04F7100E3A2BF /* CanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanView.swift; sourceTree = "<group>"; };
-		610475CE29C2F64C00E3A2BF /* PlasticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticView.swift; sourceTree = "<group>"; };
-		610475D029C2F68C00E3A2BF /* StyroformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyroformView.swift; sourceTree = "<group>"; };
-		610475D229C2F69300E3A2BF /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
-		610475D429C2F69F00E3A2BF /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
-		610475D629C2F8A700E3A2BF /* Vinyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinyl.swift; sourceTree = "<group>"; };
-		610475D829C31C5F00E3A2BF /* RecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleView.swift; sourceTree = "<group>"; };
-		6123F8BA29AC68FE005ADF35 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		F761A93C29B9C78500A0C652 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
-		F761A93E29B9C7A600A0C652 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
-		F7A4E11729AB4A0F00EAD4CC /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
-		F7A4E11A29AB8B2A00EAD4CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		F7BF7B0529A9E7F9007F8197 /* Ppigcycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ppigcycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BF7B0829A9E7F9007F8197 /* PpigcycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpigcycleApp.swift; sourceTree = "<group>"; };
-		F7BF7B0A29A9E7F9007F8197 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F7BF7B0C29A9E7FF007F8197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F7BF7B0F29A9E7FF007F8197 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F7BF7B1529A9E800007F8197 /* PpigcycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PpigcycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BF7B1929A9E800007F8197 /* PpigcycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpigcycleTests.swift; sourceTree = "<group>"; };
-		F7BF7B1F29A9E800007F8197 /* PpigcycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PpigcycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BF7B2329A9E800007F8197 /* PpigcycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpigcycleUITests.swift; sourceTree = "<group>"; };
-		F7BF7B2529A9E800007F8197 /* PpigcycleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpigcycleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F7BF7B3229A9E83A007F8197 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		F7BF7B3429A9E862007F8197 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F7CAD6BD29D088F3003162CC /* ppigcycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ppigcycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleApp.swift; sourceTree = "<group>"; };
+		F7CAD6C229D088F3003162CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7CAD6C429D088F8003162CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7CAD6C729D088F8003162CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7CAD6CD29D088F8003162CC /* ppigcycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppigcycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAD6D129D088F8003162CC /* ppigcycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleTests.swift; sourceTree = "<group>"; };
+		F7CAD6D729D088F8003162CC /* ppigcycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppigcycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAD6DB29D088F8003162CC /* ppigcycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleUITests.swift; sourceTree = "<group>"; };
+		F7CAD6DD29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7CAD6EA29D089FC003162CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7CAD6EB29D08ADB003162CC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F7CAD6ED29D08B08003162CC /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+		F7CAD6EF29D08B35003162CC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F7CAD6F129D08BBD003162CC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F7CAD6F329D08BF4003162CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F7CAD6F829D092DF003162CC /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F7CAD6FA29D09314003162CC /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		F7CAD6FC29D09331003162CC /* CanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanView.swift; sourceTree = "<group>"; };
+		F7CAD6FE29D09353003162CC /* PlasticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticView.swift; sourceTree = "<group>"; };
+		F7CAD70029D0936A003162CC /* StyroformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyroformView.swift; sourceTree = "<group>"; };
+		F7CAD70229D09382003162CC /* VinylView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylView.swift; sourceTree = "<group>"; };
+		F7CAD70429D0939A003162CC /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
+		F7CAD70629D093AE003162CC /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
+		F7CAD70829D093BB003162CC /* RecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		610475B329BFF4C800E3A2BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				610475B929BFF4C800E3A2BF /* AuthenticationServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7BF7B0229A9E7F9007F8197 /* Frameworks */ = {
+		F7CAD6BA29D088F3003162CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7BF7B1229A9E800007F8197 /* Frameworks */ = {
+		F7CAD6CA29D088F8003162CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7BF7B1C29A9E800007F8197 /* Frameworks */ = {
+		F7CAD6D429D088F8003162CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,131 +100,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		610475B729BFF4C800E3A2BF /* Frameworks */ = {
+		F7CAD6B429D088F3003162CC = {
 			isa = PBXGroup;
 			children = (
-				610475B829BFF4C800E3A2BF /* AuthenticationServices.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		610475BA29BFF4C800E3A2BF /* ppigcycle */ = {
-			isa = PBXGroup;
-			children = (
-				610475BB29BFF4C800E3A2BF /* AccountAuthenticationModificationViewController.swift */,
-				610475BD29BFF4C800E3A2BF /* MainInterface.storyboard */,
-			);
-			path = ppigcycle;
-			sourceTree = "<group>";
-		};
-		F7A4E11629AB49E900EAD4CC /* API */ = {
-			isa = PBXGroup;
-			children = (
-				F7A4E11729AB4A0F00EAD4CC /* RestAPI.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		F7A4E11929AB501E00EAD4CC /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				F7BF7B3429A9E862007F8197 /* SignUpView.swift */,
-				F7BF7B3229A9E83A007F8197 /* LoginView.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		F7BF7AFC29A9E7F9007F8197 = {
-			isa = PBXGroup;
-			children = (
-				F7BF7B0729A9E7F9007F8197 /* Ppigcycle */,
-				F7BF7B1829A9E800007F8197 /* PpigcycleTests */,
-				F7BF7B2229A9E800007F8197 /* PpigcycleUITests */,
-				610475BA29BFF4C800E3A2BF /* ppigcycle */,
-				610475B729BFF4C800E3A2BF /* Frameworks */,
-				F7BF7B0629A9E7F9007F8197 /* Products */,
+				F7CAD6BF29D088F3003162CC /* ppigcycle */,
+				F7CAD6D029D088F8003162CC /* ppigcycleTests */,
+				F7CAD6DA29D088F8003162CC /* ppigcycleUITests */,
+				F7CAD6BE29D088F3003162CC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F7BF7B0629A9E7F9007F8197 /* Products */ = {
+		F7CAD6BE29D088F3003162CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF7B0529A9E7F9007F8197 /* Ppigcycle.app */,
-				F7BF7B1529A9E800007F8197 /* PpigcycleTests.xctest */,
-				F7BF7B1F29A9E800007F8197 /* PpigcycleUITests.xctest */,
-				610475B629BFF4C800E3A2BF /* ppigcycle.appex */,
+				F7CAD6BD29D088F3003162CC /* ppigcycle.app */,
+				F7CAD6CD29D088F8003162CC /* ppigcycleTests.xctest */,
+				F7CAD6D729D088F8003162CC /* ppigcycleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7BF7B0729A9E7F9007F8197 /* Ppigcycle */ = {
+		F7CAD6BF29D088F3003162CC /* ppigcycle */ = {
 			isa = PBXGroup;
 			children = (
-				610475C029BFF4C800E3A2BF /* Info.plist */,
-				F761A93E29B9C7A600A0C652 /* AppViewModel.swift */,
-				F7A4E11929AB501E00EAD4CC /* Login */,
-				F7A4E11629AB49E900EAD4CC /* API */,
-				F7BF7B3629A9E869007F8197 /* View */,
-				F7BF7B0829A9E7F9007F8197 /* PpigcycleApp.swift */,
-				F7BF7B0C29A9E7FF007F8197 /* Assets.xcassets */,
-				F7BF7B0E29A9E7FF007F8197 /* Preview Content */,
+				F7CAD6F829D092DF003162CC /* AppViewModel.swift */,
+				F7CAD6F729D091F8003162CC /* API */,
+				F7CAD6F629D091EE003162CC /* Login */,
+				F7CAD6F529D091DE003162CC /* View */,
+				F7CAD6EA29D089FC003162CC /* Info.plist */,
+				F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */,
+				F7CAD6C429D088F8003162CC /* Assets.xcassets */,
+				F7CAD6C629D088F8003162CC /* Preview Content */,
 			);
-			path = Ppigcycle;
+			path = ppigcycle;
 			sourceTree = "<group>";
 		};
-		F7BF7B0E29A9E7FF007F8197 /* Preview Content */ = {
+		F7CAD6C629D088F8003162CC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF7B0F29A9E7FF007F8197 /* Preview Assets.xcassets */,
+				F7CAD6C729D088F8003162CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F7BF7B1829A9E800007F8197 /* PpigcycleTests */ = {
+		F7CAD6D029D088F8003162CC /* ppigcycleTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF7B1929A9E800007F8197 /* PpigcycleTests.swift */,
+				F7CAD6D129D088F8003162CC /* ppigcycleTests.swift */,
 			);
-			path = PpigcycleTests;
+			path = ppigcycleTests;
 			sourceTree = "<group>";
 		};
-		F7BF7B2229A9E800007F8197 /* PpigcycleUITests */ = {
+		F7CAD6DA29D088F8003162CC /* ppigcycleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF7B2329A9E800007F8197 /* PpigcycleUITests.swift */,
-				F7BF7B2529A9E800007F8197 /* PpigcycleUITestsLaunchTests.swift */,
+				F7CAD6DB29D088F8003162CC /* ppigcycleUITests.swift */,
+				F7CAD6DD29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift */,
 			);
-			path = PpigcycleUITests;
+			path = ppigcycleUITests;
 			sourceTree = "<group>";
 		};
-		F7BF7B3629A9E869007F8197 /* View */ = {
+		F7CAD6F529D091DE003162CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F7BF7B0A29A9E7F9007F8197 /* ContentView.swift */,
-				F7A4E11A29AB8B2A00EAD4CC /* MainView.swift */,
-				6123F8BA29AC68FE005ADF35 /* SplashView.swift */,
-				F761A93C29B9C78500A0C652 /* DataScannerView.swift */,
-				610475C829C04F7100E3A2BF /* CanView.swift */,
-				610475CE29C2F64C00E3A2BF /* PlasticView.swift */,
-				610475D029C2F68C00E3A2BF /* StyroformView.swift */,
-				610475D629C2F8A700E3A2BF /* Vinyl.swift */,
-				610475D229C2F69300E3A2BF /* GlassView.swift */,
-				610475D429C2F69F00E3A2BF /* PaperView.swift */,
-				610475D829C31C5F00E3A2BF /* RecycleView.swift */,
+				F7CAD6F129D08BBD003162CC /* SplashView.swift */,
+				F7CAD6F329D08BF4003162CC /* MainView.swift */,
+				F7CAD6C229D088F3003162CC /* ContentView.swift */,
+				F7CAD6FA29D09314003162CC /* DataScannerView.swift */,
+				F7CAD6FC29D09331003162CC /* CanView.swift */,
+				F7CAD6FE29D09353003162CC /* PlasticView.swift */,
+				F7CAD70029D0936A003162CC /* StyroformView.swift */,
+				F7CAD70229D09382003162CC /* VinylView.swift */,
+				F7CAD70429D0939A003162CC /* GlassView.swift */,
+				F7CAD70629D093AE003162CC /* PaperView.swift */,
+				F7CAD70829D093BB003162CC /* RecycleView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F7CAD6F629D091EE003162CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6EF29D08B35003162CC /* LoginView.swift */,
+				F7CAD6EB29D08ADB003162CC /* SignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F7CAD6F729D091F8003162CC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6ED29D08B08003162CC /* RestAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		610475B529BFF4C800E3A2BF /* ppigcycle */ = {
+		F7CAD6BC29D088F3003162CC /* ppigcycle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 610475C429BFF4C800E3A2BF /* Build configuration list for PBXNativeTarget "ppigcycle" */;
+			buildConfigurationList = F7CAD6E129D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycle" */;
 			buildPhases = (
-				610475B229BFF4C800E3A2BF /* Sources */,
-				610475B329BFF4C800E3A2BF /* Frameworks */,
-				610475B429BFF4C800E3A2BF /* Resources */,
+				F7CAD6B929D088F3003162CC /* Sources */,
+				F7CAD6BA29D088F3003162CC /* Frameworks */,
+				F7CAD6BB29D088F3003162CC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -269,91 +212,69 @@
 			);
 			name = ppigcycle;
 			productName = ppigcycle;
-			productReference = 610475B629BFF4C800E3A2BF /* ppigcycle.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		F7BF7B0429A9E7F9007F8197 /* Ppigcycle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7BF7B2929A9E800007F8197 /* Build configuration list for PBXNativeTarget "Ppigcycle" */;
-			buildPhases = (
-				F7BF7B0129A9E7F9007F8197 /* Sources */,
-				F7BF7B0229A9E7F9007F8197 /* Frameworks */,
-				F7BF7B0329A9E7F9007F8197 /* Resources */,
-				610475C729BFF4C800E3A2BF /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				610475C229BFF4C800E3A2BF /* PBXTargetDependency */,
-			);
-			name = Ppigcycle;
-			productName = Ppigcycle;
-			productReference = F7BF7B0529A9E7F9007F8197 /* Ppigcycle.app */;
+			productReference = F7CAD6BD29D088F3003162CC /* ppigcycle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F7BF7B1429A9E800007F8197 /* PpigcycleTests */ = {
+		F7CAD6CC29D088F8003162CC /* ppigcycleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7BF7B2C29A9E800007F8197 /* Build configuration list for PBXNativeTarget "PpigcycleTests" */;
+			buildConfigurationList = F7CAD6E429D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleTests" */;
 			buildPhases = (
-				F7BF7B1129A9E800007F8197 /* Sources */,
-				F7BF7B1229A9E800007F8197 /* Frameworks */,
-				F7BF7B1329A9E800007F8197 /* Resources */,
+				F7CAD6C929D088F8003162CC /* Sources */,
+				F7CAD6CA29D088F8003162CC /* Frameworks */,
+				F7CAD6CB29D088F8003162CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7BF7B1729A9E800007F8197 /* PBXTargetDependency */,
+				F7CAD6CF29D088F8003162CC /* PBXTargetDependency */,
 			);
-			name = PpigcycleTests;
-			productName = PpigcycleTests;
-			productReference = F7BF7B1529A9E800007F8197 /* PpigcycleTests.xctest */;
+			name = ppigcycleTests;
+			productName = ppigcycleTests;
+			productReference = F7CAD6CD29D088F8003162CC /* ppigcycleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F7BF7B1E29A9E800007F8197 /* PpigcycleUITests */ = {
+		F7CAD6D629D088F8003162CC /* ppigcycleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7BF7B2F29A9E800007F8197 /* Build configuration list for PBXNativeTarget "PpigcycleUITests" */;
+			buildConfigurationList = F7CAD6E729D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleUITests" */;
 			buildPhases = (
-				F7BF7B1B29A9E800007F8197 /* Sources */,
-				F7BF7B1C29A9E800007F8197 /* Frameworks */,
-				F7BF7B1D29A9E800007F8197 /* Resources */,
+				F7CAD6D329D088F8003162CC /* Sources */,
+				F7CAD6D429D088F8003162CC /* Frameworks */,
+				F7CAD6D529D088F8003162CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7BF7B2129A9E800007F8197 /* PBXTargetDependency */,
+				F7CAD6D929D088F8003162CC /* PBXTargetDependency */,
 			);
-			name = PpigcycleUITests;
-			productName = PpigcycleUITests;
-			productReference = F7BF7B1F29A9E800007F8197 /* PpigcycleUITests.xctest */;
+			name = ppigcycleUITests;
+			productName = ppigcycleUITests;
+			productReference = F7CAD6D729D088F8003162CC /* ppigcycleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F7BF7AFD29A9E7F9007F8197 /* Project object */ = {
+		F7CAD6B529D088F3003162CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					610475B529BFF4C800E3A2BF = {
+					F7CAD6BC29D088F3003162CC = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					F7BF7B0429A9E7F9007F8197 = {
-						CreatedOnToolsVersion = 14.0;
+					F7CAD6CC29D088F8003162CC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F7CAD6BC29D088F3003162CC;
 					};
-					F7BF7B1429A9E800007F8197 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = F7BF7B0429A9E7F9007F8197;
-					};
-					F7BF7B1E29A9E800007F8197 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = F7BF7B0429A9E7F9007F8197;
+					F7CAD6D629D088F8003162CC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F7CAD6BC29D088F3003162CC;
 					};
 				};
 			};
-			buildConfigurationList = F7BF7B0029A9E7F9007F8197 /* Build configuration list for PBXProject "Ppigcycle" */;
+			buildConfigurationList = F7CAD6B829D088F3003162CC /* Build configuration list for PBXProject "ppigcycle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -361,45 +282,36 @@
 				en,
 				Base,
 			);
-			mainGroup = F7BF7AFC29A9E7F9007F8197;
-			productRefGroup = F7BF7B0629A9E7F9007F8197 /* Products */;
+			mainGroup = F7CAD6B429D088F3003162CC;
+			productRefGroup = F7CAD6BE29D088F3003162CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7BF7B0429A9E7F9007F8197 /* Ppigcycle */,
-				F7BF7B1429A9E800007F8197 /* PpigcycleTests */,
-				F7BF7B1E29A9E800007F8197 /* PpigcycleUITests */,
-				610475B529BFF4C800E3A2BF /* ppigcycle */,
+				F7CAD6BC29D088F3003162CC /* ppigcycle */,
+				F7CAD6CC29D088F8003162CC /* ppigcycleTests */,
+				F7CAD6D629D088F8003162CC /* ppigcycleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		610475B429BFF4C800E3A2BF /* Resources */ = {
+		F7CAD6BB29D088F3003162CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610475BF29BFF4C800E3A2BF /* MainInterface.storyboard in Resources */,
+				F7CAD6C829D088F8003162CC /* Preview Assets.xcassets in Resources */,
+				F7CAD6C529D088F8003162CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7BF7B0329A9E7F9007F8197 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7BF7B1029A9E7FF007F8197 /* Preview Assets.xcassets in Resources */,
-				F7BF7B0D29A9E7FF007F8197 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7BF7B1329A9E800007F8197 /* Resources */ = {
+		F7CAD6CB29D088F8003162CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7BF7B1D29A9E800007F8197 /* Resources */ = {
+		F7CAD6D529D088F8003162CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,139 +321,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		610475B229BFF4C800E3A2BF /* Sources */ = {
+		F7CAD6B929D088F3003162CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610475BC29BFF4C800E3A2BF /* AccountAuthenticationModificationViewController.swift in Sources */,
+				F7CAD6EE29D08B08003162CC /* RestAPI.swift in Sources */,
+				F7CAD6F429D08BF4003162CC /* MainView.swift in Sources */,
+				F7CAD6F929D092DF003162CC /* AppViewModel.swift in Sources */,
+				F7CAD6FF29D09353003162CC /* PlasticView.swift in Sources */,
+				F7CAD6C329D088F3003162CC /* ContentView.swift in Sources */,
+				F7CAD70729D093AE003162CC /* PaperView.swift in Sources */,
+				F7CAD70529D0939A003162CC /* GlassView.swift in Sources */,
+				F7CAD6FB29D09314003162CC /* DataScannerView.swift in Sources */,
+				F7CAD70129D0936A003162CC /* StyroformView.swift in Sources */,
+				F7CAD70329D09382003162CC /* VinylView.swift in Sources */,
+				F7CAD6EC29D08ADB003162CC /* SignUpView.swift in Sources */,
+				F7CAD6F029D08B35003162CC /* LoginView.swift in Sources */,
+				F7CAD6C129D088F3003162CC /* ppigcycleApp.swift in Sources */,
+				F7CAD6F229D08BBD003162CC /* SplashView.swift in Sources */,
+				F7CAD70929D093BB003162CC /* RecycleView.swift in Sources */,
+				F7CAD6FD29D09331003162CC /* CanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7BF7B0129A9E7F9007F8197 /* Sources */ = {
+		F7CAD6C929D088F8003162CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BF7B3529A9E862007F8197 /* SignUpView.swift in Sources */,
-				610475D329C2F69300E3A2BF /* GlassView.swift in Sources */,
-				610475D729C2F8A700E3A2BF /* Vinyl.swift in Sources */,
-				F7A4E11B29AB8B2A00EAD4CC /* MainView.swift in Sources */,
-				F761A93F29B9C7A600A0C652 /* AppViewModel.swift in Sources */,
-				610475D129C2F68C00E3A2BF /* StyroformView.swift in Sources */,
-				F7A4E11829AB4A0F00EAD4CC /* RestAPI.swift in Sources */,
-				610475D529C2F69F00E3A2BF /* PaperView.swift in Sources */,
-				F7BF7B3329A9E83A007F8197 /* LoginView.swift in Sources */,
-				610475CF29C2F64C00E3A2BF /* PlasticView.swift in Sources */,
-				F7BF7B0B29A9E7F9007F8197 /* ContentView.swift in Sources */,
-				F7BF7B0929A9E7F9007F8197 /* PpigcycleApp.swift in Sources */,
-				6123F8BB29AC68FE005ADF35 /* SplashView.swift in Sources */,
-				F761A93D29B9C78500A0C652 /* DataScannerView.swift in Sources */,
-				610475D929C31C5F00E3A2BF /* RecycleView.swift in Sources */,
-				610475C929C04F7100E3A2BF /* CanView.swift in Sources */,
+				F7CAD6D229D088F8003162CC /* ppigcycleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7BF7B1129A9E800007F8197 /* Sources */ = {
+		F7CAD6D329D088F8003162CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BF7B1A29A9E800007F8197 /* PpigcycleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7BF7B1B29A9E800007F8197 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7BF7B2429A9E800007F8197 /* PpigcycleUITests.swift in Sources */,
-				F7BF7B2629A9E800007F8197 /* PpigcycleUITestsLaunchTests.swift in Sources */,
+				F7CAD6DC29D088F8003162CC /* ppigcycleUITests.swift in Sources */,
+				F7CAD6DE29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		610475C229BFF4C800E3A2BF /* PBXTargetDependency */ = {
+		F7CAD6CF29D088F8003162CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 610475B529BFF4C800E3A2BF /* ppigcycle */;
-			targetProxy = 610475C129BFF4C800E3A2BF /* PBXContainerItemProxy */;
+			target = F7CAD6BC29D088F3003162CC /* ppigcycle */;
+			targetProxy = F7CAD6CE29D088F8003162CC /* PBXContainerItemProxy */;
 		};
-		F7BF7B1729A9E800007F8197 /* PBXTargetDependency */ = {
+		F7CAD6D929D088F8003162CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7BF7B0429A9E7F9007F8197 /* Ppigcycle */;
-			targetProxy = F7BF7B1629A9E800007F8197 /* PBXContainerItemProxy */;
-		};
-		F7BF7B2129A9E800007F8197 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F7BF7B0429A9E7F9007F8197 /* Ppigcycle */;
-			targetProxy = F7BF7B2029A9E800007F8197 /* PBXContainerItemProxy */;
+			target = F7CAD6BC29D088F3003162CC /* ppigcycle */;
+			targetProxy = F7CAD6D829D088F8003162CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		610475BD29BFF4C800E3A2BF /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				610475BE29BFF4C800E3A2BF /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		610475C529BFF4C800E3A2BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A9HLXX85X4;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ppigcycle/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ppigcycle;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.Ppigcycle.ppigcycle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		610475C629BFF4C800E3A2BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A9HLXX85X4;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ppigcycle/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ppigcycle;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.Ppigcycle.ppigcycle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F7BF7B2729A9E800007F8197 /* Debug */ = {
+		F7CAD6DF29D088F8003162CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -591,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -601,7 +437,7 @@
 			};
 			name = Debug;
 		};
-		F7BF7B2829A9E800007F8197 /* Release */ = {
+		F7CAD6E029D088F8003162CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -645,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -655,19 +491,18 @@
 			};
 			name = Release;
 		};
-		F7BF7B2A29A9E800007F8197 /* Debug */ = {
+		F7CAD6E229D088F8003162CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ppigcycle/Preview Content\"";
-				DEVELOPMENT_TEAM = A9HLXX85X4;
+				DEVELOPMENT_ASSET_PATHS = "\"ppigcycle/Preview Content\"";
+				DEVELOPMENT_TEAM = T9JBD726X3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode and text";
+				INFOPLIST_FILE = ppigcycle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -678,7 +513,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.Ppigcycle;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -686,19 +521,18 @@
 			};
 			name = Debug;
 		};
-		F7BF7B2B29A9E800007F8197 /* Release */ = {
+		F7CAD6E329D088F8003162CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ppigcycle/Preview Content\"";
-				DEVELOPMENT_TEAM = A9HLXX85X4;
+				DEVELOPMENT_ASSET_PATHS = "\"ppigcycle/Preview Content\"";
+				DEVELOPMENT_TEAM = T9JBD726X3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode and text";
+				INFOPLIST_FILE = ppigcycle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -709,7 +543,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.Ppigcycle;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -717,7 +551,7 @@
 			};
 			name = Release;
 		};
-		F7BF7B2D29A9E800007F8197 /* Debug */ = {
+		F7CAD6E529D088F8003162CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -726,18 +560,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9JBD726X3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.PpigcycleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ppigcycle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ppigcycle";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppigcycle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ppigcycle";
 			};
 			name = Debug;
 		};
-		F7BF7B2E29A9E800007F8197 /* Release */ = {
+		F7CAD6E629D088F8003162CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -746,18 +580,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9JBD726X3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.PpigcycleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ppigcycle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ppigcycle";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppigcycle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ppigcycle";
 			};
 			name = Release;
 		};
-		F7BF7B3029A9E800007F8197 /* Debug */ = {
+		F7CAD6E829D088F8003162CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -766,16 +600,16 @@
 				DEVELOPMENT_TEAM = T9JBD726X3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.PpigcycleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Ppigcycle;
+				TEST_TARGET_NAME = ppigcycle;
 			};
 			name = Debug;
 		};
-		F7BF7B3129A9E800007F8197 /* Release */ = {
+		F7CAD6E929D088F8003162CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -784,64 +618,55 @@
 				DEVELOPMENT_TEAM = T9JBD726X3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jh.PpigcycleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Ppigcycle;
+				TEST_TARGET_NAME = ppigcycle;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		610475C429BFF4C800E3A2BF /* Build configuration list for PBXNativeTarget "ppigcycle" */ = {
+		F7CAD6B829D088F3003162CC /* Build configuration list for PBXProject "ppigcycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				610475C529BFF4C800E3A2BF /* Debug */,
-				610475C629BFF4C800E3A2BF /* Release */,
+				F7CAD6DF29D088F8003162CC /* Debug */,
+				F7CAD6E029D088F8003162CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7BF7B0029A9E7F9007F8197 /* Build configuration list for PBXProject "Ppigcycle" */ = {
+		F7CAD6E129D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7BF7B2729A9E800007F8197 /* Debug */,
-				F7BF7B2829A9E800007F8197 /* Release */,
+				F7CAD6E229D088F8003162CC /* Debug */,
+				F7CAD6E329D088F8003162CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7BF7B2929A9E800007F8197 /* Build configuration list for PBXNativeTarget "Ppigcycle" */ = {
+		F7CAD6E429D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7BF7B2A29A9E800007F8197 /* Debug */,
-				F7BF7B2B29A9E800007F8197 /* Release */,
+				F7CAD6E529D088F8003162CC /* Debug */,
+				F7CAD6E629D088F8003162CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7BF7B2C29A9E800007F8197 /* Build configuration list for PBXNativeTarget "PpigcycleTests" */ = {
+		F7CAD6E729D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7BF7B2D29A9E800007F8197 /* Debug */,
-				F7BF7B2E29A9E800007F8197 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7BF7B2F29A9E800007F8197 /* Build configuration list for PBXNativeTarget "PpigcycleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7BF7B3029A9E800007F8197 /* Debug */,
-				F7BF7B3129A9E800007F8197 /* Release */,
+				F7CAD6E829D088F8003162CC /* Debug */,
+				F7CAD6E929D088F8003162CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F7BF7AFD29A9E7F9007F8197 /* Project object */;
+	rootObject = F7CAD6B529D088F3003162CC /* Project object */;
 }

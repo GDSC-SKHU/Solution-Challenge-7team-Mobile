@@ -1,32 +1,17 @@
 //
-//  PpigcycleApp.swift
-//  Ppigcycle
+//  ppigcycleApp.swift
+//  ppigcycle
 //
-//  Created by Jinhee on 2023/02/25.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import SwiftUI
 
 @main
-struct PpigcycleApp: App {
-    
+struct ppigcycleApp: App {
     var body: some Scene {
         WindowGroup {
             SplashView()
-            //ContentView()
-            //LoginView()
         }
     }
-    
-//    @StateObject private var vm = AppViewModel()
-//
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//                .environmentObject(vm)
-//                .task {
-//                    await vm.requestDataScannerAccessStatus()
-//                }
-//        }
-//    }
 }

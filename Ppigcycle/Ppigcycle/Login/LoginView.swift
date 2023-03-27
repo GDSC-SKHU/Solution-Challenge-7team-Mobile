@@ -1,8 +1,8 @@
 //
 //  LoginView.swift
-//  Ppigcycle
+//  ppigcycle
 //
-//  Created by Jinhee on 2023/02/25.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import SwiftUI
@@ -37,6 +37,7 @@ struct LoginView: View {
                             .padding()
                             .autocapitalization(.none) // 자동으로 대문자 설정 안하기
                             .background(RoundedRectangle(cornerRadius: 10).strokeBorder())
+                            .disableAutocorrection(true) // 자동완성 끄기
                         Spacer()
                     }
                     .padding(10)
@@ -55,7 +56,7 @@ struct LoginView: View {
                             if id != "" && password != "" {
                                 let parameters: [String: Any] = ["id": id, "password": password]
                                 api.LoginSuccess(parameters: parameters) { value in
-                                    
+
                                     if value {
                                         self.loginSuccess = true
                                     }

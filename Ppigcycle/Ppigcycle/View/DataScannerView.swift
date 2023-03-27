@@ -1,8 +1,8 @@
 //
 //  DataScannerView.swift
-//  Ppigcycle
+//  ppigcycle
 //
-//  Created by Jinhee on 2023/03/09.
+//  Created by Jinhee on 2023/03/26.
 //
 
 import Foundation
