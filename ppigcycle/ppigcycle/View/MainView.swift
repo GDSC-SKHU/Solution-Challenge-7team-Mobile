@@ -49,7 +49,7 @@ struct MainView: View {
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        NavigationLink(destination: PlasticView()
+                        NavigationLink(destination: StyroformView()
                         ,tag: 5, selection: self.$tag) {}
                         Button(action: {self.tag = 5}){
                         Image("styrofoam").renderingMode(.original)
@@ -59,21 +59,20 @@ struct MainView: View {
 
                     }.padding()
                     HStack(spacing: 15){
-                        NavigationLink(destination: PlasticView()
+                        NavigationLink(destination: CanView()
                         ,tag: 6, selection: self.$tag) {}
                         Button(action: {self.tag = 6}){
                             Image("can").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-                        NavigationLink(destination: PlasticView()
+                        NavigationLink(destination: VinylView()
                         ,tag: 7, selection: self.$tag) {}
                         Button(action: {self.tag = 7}){
                             Image("vinyl").renderingMode(.original)
                                 .resizable()
                                 .frame(width: 150, height: 120)
                         }
-
                     }.padding()
                     Spacer()
                     NavigationLink(destination: ContentView()

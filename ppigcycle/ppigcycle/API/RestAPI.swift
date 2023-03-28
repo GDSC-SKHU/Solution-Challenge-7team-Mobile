@@ -21,7 +21,6 @@ struct Login: Hashable, Codable {
 }
 
 struct Barcode: Hashable, Codable {
-    //let barcodeNumber: Int
     let goods_name: String
     let how: String
     let method: String
@@ -103,53 +102,29 @@ class RestAPI: ObservableObject {
     }
     
     //MARK: 바코드 번호로 조회
-//    func fetch() {
-//            guard let url = URL(string:
-//                "http://ppigcycle.duckdns.org/barcode/8801094082406") else {
-//                return
-//            }
-//
-//            let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-//                guard let data = data, error == nil else {
-//                    return
-//                }
-//
-//                do {
-//                    let posts = try JSONDecoder().decode(Barcode.self, from: data)
-//                    DispatchQueue.main.async {
-//                        self?.posts = [posts]
-//                    }
-//                }
-//                catch {
-//                    print(error)
-//                }
-//            }
-//            task.resume()
-//        }
-    
     func fetch(parameters: [String : Any]) {
         let barcodeNumber = parameters["barcodeNumber"]!
-
-            guard let url = URL(string:
-                "http://ppigcycle.duckdns.org/barcode/\(barcodeNumber)") else {
+        
+        guard let url = URL(string:
+                                "http://ppigcycle.duckdns.org/barcode/\(barcodeNumber)") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+            guard let data = data, error == nil else {
                 return
             }
-
-            let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-                guard let data = data, error == nil else {
-                    return
-                }
-
-                do {
-                    let posts = try JSONDecoder().decode([Barcode].self, from: data)
-                    DispatchQueue.main.async { [self] in
-                        self?.posts = posts
-                    }
-                }
-                catch {
-                    print(error)
+            
+            do {
+                let posts = try JSONDecoder().decode(Barcode.self, from: data)
+                DispatchQueue.main.async { [self] in
+                    self?.posts = [posts]
                 }
             }
-            task.resume()
+            catch {
+                print(error)
+            }
         }
+        task.resume()
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7295C6E29D30001007FDE44 /* BarcodeScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7295C6D29D30001007FDE44 /* BarcodeScanView.swift */; };
 		F7CAD6C129D088F3003162CC /* ppigcycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */; };
 		F7CAD6C329D088F3003162CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6C229D088F3003162CC /* ContentView.swift */; };
 		F7CAD6C529D088F8003162CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CAD6C429D088F8003162CC /* Assets.xcassets */; };
@@ -27,7 +28,6 @@
 		F7CAD70329D09382003162CC /* VinylView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70229D09382003162CC /* VinylView.swift */; };
 		F7CAD70529D0939A003162CC /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70429D0939A003162CC /* GlassView.swift */; };
 		F7CAD70729D093AE003162CC /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70629D093AE003162CC /* PaperView.swift */; };
-		F7CAD70929D093BB003162CC /* RecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70829D093BB003162CC /* RecycleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7295C6D29D30001007FDE44 /* BarcodeScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanView.swift; sourceTree = "<group>"; };
 		F7CAD6BD29D088F3003162CC /* ppigcycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ppigcycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleApp.swift; sourceTree = "<group>"; };
 		F7CAD6C229D088F3003162CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		F7CAD70229D09382003162CC /* VinylView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylView.swift; sourceTree = "<group>"; };
 		F7CAD70429D0939A003162CC /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
 		F7CAD70629D093AE003162CC /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
-		F7CAD70829D093BB003162CC /* RecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +165,7 @@
 			children = (
 				F7CAD6F129D08BBD003162CC /* SplashView.swift */,
 				F7CAD6F329D08BF4003162CC /* MainView.swift */,
+				F7295C6D29D30001007FDE44 /* BarcodeScanView.swift */,
 				F7CAD6C229D088F3003162CC /* ContentView.swift */,
 				F7CAD6FA29D09314003162CC /* DataScannerView.swift */,
 				F7CAD6FC29D09331003162CC /* CanView.swift */,
@@ -173,7 +174,6 @@
 				F7CAD70229D09382003162CC /* VinylView.swift */,
 				F7CAD70429D0939A003162CC /* GlassView.swift */,
 				F7CAD70629D093AE003162CC /* PaperView.swift */,
-				F7CAD70829D093BB003162CC /* RecycleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +329,7 @@
 				F7CAD6F429D08BF4003162CC /* MainView.swift in Sources */,
 				F7CAD6F929D092DF003162CC /* AppViewModel.swift in Sources */,
 				F7CAD6FF29D09353003162CC /* PlasticView.swift in Sources */,
+				F7295C6E29D30001007FDE44 /* BarcodeScanView.swift in Sources */,
 				F7CAD6C329D088F3003162CC /* ContentView.swift in Sources */,
 				F7CAD70729D093AE003162CC /* PaperView.swift in Sources */,
 				F7CAD70529D0939A003162CC /* GlassView.swift in Sources */,
@@ -339,7 +340,6 @@
 				F7CAD6F029D08B35003162CC /* LoginView.swift in Sources */,
 				F7CAD6C129D088F3003162CC /* ppigcycleApp.swift in Sources */,
 				F7CAD6F229D08BBD003162CC /* SplashView.swift in Sources */,
-				F7CAD70929D093BB003162CC /* RecycleView.swift in Sources */,
 				F7CAD6FD29D09331003162CC /* CanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
