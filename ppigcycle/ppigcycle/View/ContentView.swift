@@ -12,6 +12,8 @@ struct ContentView: View {
     
     @EnvironmentObject var vm: AppViewModel
     @StateObject var api = RestAPI()
+    @State var barcodeNumber: String = ""
+    @State var tag:Int? = nil
     
     var body: some View {
         switch vm.dataScannerAccessStatus {
@@ -58,22 +60,37 @@ struct ContentView: View {
     }
     
     private var bottomContainerView: some View {
-        VStack {
-            headerView
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: 16) {
-                    ForEach(vm.recognizedItems) { item in
-                        switch item {
-                        case .barcode(let barcode):
-                            
-                            Text(barcode.payloadStringValue ?? "Unknown barcode")
-                            
-                        @unknown default:
-                            Text("Unknown")
+        NavigationView {
+            VStack {
+                headerView
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 16) {
+                        ForEach(vm.recognizedItems) { item in
+                            switch item {
+                            case .barcode(let barcode):
+                                
+                                let barcodeNum = barcode.payloadStringValue ?? "Unknown"
+                                Text(barcodeNum)
+                                
+                                NavigationLink(destination: BarcodeScanView(barcodeNumber: $barcodeNumber)
+                                ,tag: 1, selection: self.$tag) {}
+                                Button(action: {
+                                    if barcodeNum != "" {
+                                        barcodeNumber = barcodeNum
+                                        self.tag = 1
+                                    }
+                                }) {
+                                    Text("분리수거하는 방법")
+                                        .foregroundColor(.green)
+                                }
+                                
+                            @unknown default:
+                                Text("Unknown")
+                            }
                         }
                     }
+                    .padding()
                 }
-                .padding()
             }
         }
     }

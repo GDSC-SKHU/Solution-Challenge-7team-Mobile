@@ -9,7 +9,16 @@ import SwiftUI
 
 struct PaperView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(r:254, g: 251, b: 233).ignoresSafeArea()
+            VStack{
+                Text("종이 분리수거 과정")
+                    .bold()
+                    .padding()
+                    .font(.system(size: 18))
+                Text(" 해당하는 분리수거 방법이 없습니다.")
+            }
+        }
     }
 }
 
