@@ -20,11 +20,20 @@ struct Login: Hashable, Codable {
     // 로그인 성공 시 반환되는 값
 }
 
+struct Barcode: Hashable, Codable {
+    //let barcodeNumber: Int
+    let goods_name: String
+    let how: String
+    let method: String
+}
+
 class RestAPI: ObservableObject {
     static let shared = RestAPI()
     @Published var signup: [SignUp] = []
     @Published var login: [Login] = []
     @Published var loginsuccess: Bool = false
+    
+    @Published var posts: [Barcode] = []
     
     //MARK: 회원가입
     func Signup(parameters: [String: Any]) {
@@ -92,4 +101,55 @@ class RestAPI: ObservableObject {
         }
         task.resume()
     }
+    
+    //MARK: 바코드 번호로 조회
+//    func fetch() {
+//            guard let url = URL(string:
+//                "http://ppigcycle.duckdns.org/barcode/8801094082406") else {
+//                return
+//            }
+//
+//            let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+//                guard let data = data, error == nil else {
+//                    return
+//                }
+//
+//                do {
+//                    let posts = try JSONDecoder().decode(Barcode.self, from: data)
+//                    DispatchQueue.main.async {
+//                        self?.posts = [posts]
+//                    }
+//                }
+//                catch {
+//                    print(error)
+//                }
+//            }
+//            task.resume()
+//        }
+    
+    func fetch(parameters: [String : Any]) {
+        let barcodeNumber = parameters["barcodeNumber"]!
+
+            guard let url = URL(string:
+                "http://ppigcycle.duckdns.org/barcode/\(barcodeNumber)") else {
+                return
+            }
+
+            let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+                guard let data = data, error == nil else {
+                    return
+                }
+
+                do {
+                    let posts = try JSONDecoder().decode([Barcode].self, from: data)
+                    DispatchQueue.main.async { [self] in
+                        self?.posts = posts
+                    }
+                }
+                catch {
+                    print(error)
+                }
+            }
+            task.resume()
+        }
 }

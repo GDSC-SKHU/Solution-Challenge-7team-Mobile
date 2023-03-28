@@ -37,9 +37,9 @@ final class AppViewModel: ObservableObject {
     
     var headerText: String {
         if recognizedItems.isEmpty {
-            return "Scanning \(scanType.rawValue)"
+            return "바코드를 스캔하세요."
         } else {
-            return "Recognized \(recognizedItems.count) item(s)"
+            return "스캔된 바코드 \(recognizedItems.count) 개"
         }
     }
     
