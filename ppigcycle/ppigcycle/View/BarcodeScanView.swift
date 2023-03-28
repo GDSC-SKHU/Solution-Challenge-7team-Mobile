@@ -16,9 +16,21 @@ struct BarcodeScanView: View {
         NavigationView {
             List {
                 ForEach(barcode.posts, id: \.self) { result in
-                    Text(result.goods_name)
-                    Text(result.how)
-                    Text(result.method)
+                    HStack {
+                        Text("제품명 - ")
+                            .foregroundColor(.green)
+                        Text(result.goods_name)
+                    }
+                    HStack {
+                        Text("분리수거하는 방법 - ")
+                            .foregroundColor(.green)
+                        Text(result.how)
+                    }
+                    HStack {
+                        Text("분리수거 분류 - ")
+                            .foregroundColor(.green)
+                        Text(result.method)
+                    }
                 }
             }.navigationTitle("분리수거하는 방법")
                 .listStyle(PlainListStyle())

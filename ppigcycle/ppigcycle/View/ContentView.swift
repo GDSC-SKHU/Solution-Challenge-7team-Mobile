@@ -79,6 +79,10 @@ struct ContentView: View {
                                         barcodeNumber = barcodeNum
                                         self.tag = 1
                                     }
+                                    else {
+                                        Text("상품 정보를 찾을 수 없습니다.")
+                                            .foregroundColor(Color.red)
+                                    }
                                 }) {
                                     Text("분리수거하는 방법")
                                         .foregroundColor(.green)
