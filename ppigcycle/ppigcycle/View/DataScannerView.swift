@@ -13,13 +13,11 @@ struct DataScannerView: UIViewControllerRepresentable {
     
     @Binding var recognizedItems: [RecognizedItem]
     let recognizedDataType: DataScannerViewController.RecognizedDataType
-    let recognizesMultipleItems: Bool
     
     func makeUIViewController(context: Context) -> DataScannerViewController {
         let vc = DataScannerViewController(
             recognizedDataTypes: [recognizedDataType],
             qualityLevel: .balanced,
-            recognizesMultipleItems: recognizesMultipleItems,
             isGuidanceEnabled: true,
             isHighlightingEnabled: true
         )

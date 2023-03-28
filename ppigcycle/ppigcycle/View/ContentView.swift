@@ -11,14 +11,7 @@ import VisionKit
 struct ContentView: View {
     
     @EnvironmentObject var vm: AppViewModel
-    
-    private let textContentTypes: [(title: String, textContentType: DataScannerViewController.TextContentType?)] = [
-        ("All", .none),
-        ("URL", .URL),
-        ("Phone", .telephoneNumber),
-        ("Email", .emailAddress),
-        ("Address", .fullStreetAddress)
-    ]
+    @StateObject var api = RestAPI()
     
     var body: some View {
         switch vm.dataScannerAccessStatus {
@@ -38,8 +31,7 @@ struct ContentView: View {
     private var mainView: some View {
         DataScannerView(
             recognizedItems: $vm.recognizedItems,
-            recognizedDataType: vm.recognizedDataType,
-            recognizesMultipleItems: vm.recognizesMultipleItems)
+            recognizedDataType: vm.recognizedDataType)
         .background { Color.gray.opacity(0.3) }
         .ignoresSafeArea()
         .id(vm.dataScannerViewId)
@@ -57,30 +49,10 @@ struct ContentView: View {
                     controller.view.backgroundColor = .clear
                 }
         }
-        .onChange(of: vm.scanType) { _ in vm.recognizedItems = [] }
-        .onChange(of: vm.textContentType) { _ in vm.recognizedItems = [] }
-        .onChange(of: vm.recognizesMultipleItems) { _ in vm.recognizedItems = []}
     }
     
     private var headerView: some View {
         VStack {
-            HStack {
-                Picker("Scan Type", selection: $vm.scanType) {
-                    Text("Barcode").tag(ScanType.barcode)
-                    Text("Text").tag(ScanType.text)
-                }.pickerStyle(.segmented)
-                
-                Toggle("Scan multiple", isOn: $vm.recognizesMultipleItems)
-            }.padding(.top)
-            
-            if vm.scanType == .text {
-                Picker("Text content type", selection: $vm.textContentType) {
-                    ForEach(textContentTypes, id: \.self.textContentType) { option in
-                        Text(option.title).tag(option.textContentType)
-                    }
-                }.pickerStyle(.segmented)
-            }
-            
             Text(vm.headerText).padding(.top)
         }.padding(.horizontal)
     }
@@ -93,10 +65,8 @@ struct ContentView: View {
                     ForEach(vm.recognizedItems) { item in
                         switch item {
                         case .barcode(let barcode):
-                            Text(barcode.payloadStringValue ?? "Unknown barcode")
                             
-                        case .text(let text):
-                            Text(text.transcript)
+                            Text(barcode.payloadStringValue ?? "Unknown barcode")
                             
                         @unknown default:
                             Text("Unknown")
