@@ -34,7 +34,7 @@ class RestAPI: ObservableObject {
     @Published var date: String = "" //날짜
     @Published var posts: [Barcode] = []
     @Published var materialResponse: String = ""
-    @Published var userid: Any = ""
+    static var userid: Any = ""
     
     //MARK: 회원가입
     func Signup(parameters: [String: Any]) {
@@ -83,7 +83,7 @@ class RestAPI: ObservableObject {
         request.httpMethod = "POST"
         request.httpBody = data
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        userid = parameters["id"]!
+        RestAPI.userid = parameters["id"]!
         
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, _, error in
             guard let data = data, error == nil else {
@@ -132,9 +132,9 @@ class RestAPI: ObservableObject {
     }
     
     //MARK: 분리수거 날짜 조회
-    func fetchDate(parameters: [String: Any]) {
+    func fetchDate() {
         
-        if let url = URL(string: "http://ppigcycle.duckdns.org/user/\(userid)/day") {
+        if let url = URL(string: "http://ppigcycle.duckdns.org/user/\(RestAPI.userid)/day") {
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let error = error {
                     print("Error:", error)

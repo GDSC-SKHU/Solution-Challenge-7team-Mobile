@@ -24,15 +24,13 @@ struct MainView: View {
                     HStack{
                         Text("분리수거 버리는 날은 ")
                             .font(.system(size: 20))
-                        Text(restAPI.date)
+                        Text("\(restAPI.date)요일")
                             .font(.system(size: 35,weight: .bold))
                             .foregroundColor(Color.green)
                             .onAppear {
                                 restAPI.fetchDate()
                             }
-                        Text("요일")
-                            .font(.system(size: 35,weight: .bold))
-                            .foregroundColor(Color.green)
+
                     }.padding(25)
                     HStack(spacing: 15){
                         NavigationLink(destination:PaperView()//updateView(material: "종이")
